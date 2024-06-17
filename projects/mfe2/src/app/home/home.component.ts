@@ -1,7 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { LogLibService } from 'projects/shared-lib/src/public-api';
+// Note: This mapping is defined in root tsconfig.json.
+// So, you NEED to import from 'shared-lib` to share the same instance between MFEs.
+import { LogLibService } from 'shared-lib';
 
 @Component({
   selector: 'app-home',

@@ -1,10 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
-import {
-  LogLibService,
-  SharedLibModule,
-} from 'projects/shared-lib/src/public-api';
+import { LogLibService, SharedLibModule } from 'shared-lib';
 
 @Component({
   selector: 'app-home',

@@ -69,3 +69,18 @@ ng generate library shared-lib
 ## References
 
 - [Official Angular native federation package](https://www.npmjs.com/package/@angular-architects/native-federation)
+
+## Misc
+
+- Update Angular version and native federation in workspace
+
+```sh
+ npx ng update @angular/core@18 @angular/cli@18
+ npm install @angular-architects/native-federation@18.x
+```
+
+- For upgrading to v18, additional step was necessary. [See here](https://github.com/angular-architects/module-federation-plugin/blob/main/libs/native-federation/docs/update18.md). This would however cause issue while building up the `shared-lib` package. So, for now we need to build shared lib first, run the `postinstall` script manually and run the application.
+
+- For library (shared-lib), update has to be done manually. [See here](https://stackoverflow.com/questions/68373297/how-to-update-an-angular-library-project)
+
+node version: v20.14.0
