@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { LogLibService } from 'shared-lib';
 
 @Component({
-  selector: 'app-home',
+  selector: 'mfe2-home',
   standalone: true,
   imports: [],
   templateUrl: './home.component.html',

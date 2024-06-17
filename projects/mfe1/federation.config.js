@@ -6,11 +6,8 @@ const {
 module.exports = withNativeFederation({
   name: "mfe1",
 
-  // exposes: {
-  //   "./Component": "./projects/mfe1/src/app/app.component.ts",
-  // },
   exposes: {
-    "./Module": "./projects/mfe1/src/app/feature.module.ts",
+    "./Module": "./projects/mfe1/src/app/app.routes.ts",
   },
 
   shared: {

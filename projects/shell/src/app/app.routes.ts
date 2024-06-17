@@ -18,7 +18,7 @@ export const routes: Routes = [
       loadRemoteModule({
         remoteName: 'mfe1',
         exposedModule: './Module',
-      }).then((m) => m.FeatureModule),
+      }).then((m) => m.routes),
   },
   {
     path: 'mfe2',
@@ -26,6 +26,6 @@ export const routes: Routes = [
       loadRemoteModule({
         remoteName: 'mfe2',
         exposedModule: './Module',
-      }).then((m) => m.FeatureModule),
+      }).then((m) => m.routes),
   },
 ];
